@@ -1,0 +1,20 @@
+pipeline {
+  any agent
+ stages {
+   stage("this Master Branch"){
+   steps{
+     sh 'echo "this is master branch"'
+} 
+  }
+     stages("this is sprint1"){
+       steps {
+       sh 'echo "This is sprint1 application "'
+}
+  }
+     stages("this is Deploy app"){
+       steps {
+       sh 'echo "This is Deploy application"'
+}
+ }
+}
+ }
